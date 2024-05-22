@@ -1,0 +1,171 @@
+!SESSION 2024-05-21 15:00:14.717 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-05-21 15:01:24.784
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-05-21 15:01:24.804
+!MESSAGE Log4j2 initialized with config file C:\Work_places\Nam3_ki2\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\Final_Project\Hardware_Testing\STM32_uart\STM_GPS_ESFinal\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-05-21 15:01:31.766
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-05-21 15:03:51.503
+!MESSAGE Indexed 'STM_GPS_ESFinal' (24 sources, 118 headers) in 10.3 sec: 10,306 declarations; 45,665 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.33%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-05-21 15:43:31.493
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+java.lang.Exception: Error finishing flash operation
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10004 2024-05-21 15:43:31.494
+!MESSAGE Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 10004 2024-05-21 15:43:31.494
+!MESSAGE Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!STACK 0
+java.lang.Exception: Error finishing flash operation
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-05-21 15:48:40.790
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+java.lang.Exception: Error finishing flash operation
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10004 2024-05-21 15:48:40.790
+!MESSAGE Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 10004 2024-05-21 15:48:40.790
+!MESSAGE Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!STACK 0
+java.lang.Exception: Error finishing flash operation
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 2 2024-05-21 15:49:00.765
+!MESSAGE Device validation. No ROM-table found: 0
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2024-05-21 15:49:00.766
+!MESSAGE Could not verify ST device! Please verify that the latest version of the GDB-server is used for the connection.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-05-21 15:51:00.417
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+java.lang.Exception: Error finishing flash operation
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10004 2024-05-21 15:51:00.417
+!MESSAGE Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 10004 2024-05-21 15:51:00.417
+!MESSAGE Failed to execute MI command:
+load C:\\Work_places\\Nam3_ki2\\He_Thong_Nhung_Giao_Tiep_VI_Su_Li\\Final_Project\\Hardware_Testing\\STM32_uart\\STM_GPS_ESFinal\\STM_GPS_ESFinal\\Debug\\STM_GPS_ESFinal.elf 
+
+Error message from debugger back end:
+Error finishing flash operation
+!STACK 0
+java.lang.Exception: Error finishing flash operation
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)

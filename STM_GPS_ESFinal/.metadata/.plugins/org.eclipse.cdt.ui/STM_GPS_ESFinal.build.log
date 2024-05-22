@@ -1,0 +1,10 @@
+19:49:38 **** Incremental Build of configuration Debug for project STM_GPS_ESFinal ****
+make -j8 all 
+arm-none-eabi-size  STM_GPS_ESFinal.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42784	    504	   3592	  46880	   b720	STM_GPS_ESFinal.elf
+Finished building: default.size.stdout
+ 
+
+19:49:38 Build Finished. 0 errors, 0 warnings. (took 344ms)
+
