@@ -36,18 +36,18 @@ function resetAllData() {
         location.reload();
     }
 }
-function getDirectionName(direction) {
-    const directions = {
-        "N": "North", "S": "South", "E": "East", "W": "West",
-        "NE": "North-East", "SE": "South-East",
-        "SW": "South-West", "NW": "North-West",
-        "NNE": "North of North-East", "ENE": "East of North-East",
-        "ESE": "East of South-East", "SSE": "South of South-East",
-        "SSW": "South of South-West", "WSW": "West of South-West",
-        "WNW": "West of North-West", "NNW": "North of North-West"
-    };
-    return directions[direction] ? directions[direction] : "INVALID Direction";
-}
+// function getDirectionName(direction) {
+//     const directions = {
+//         "N": "North", "S": "South", "E": "East", "W": "West",
+//         "NE": "North-East", "SE": "South-East",
+//         "SW": "South-West", "NW": "North-West",
+//         "NNE": "North of North-East", "ENE": "East of North-East",
+//         "ESE": "East of South-East", "SSE": "South of South-East",
+//         "SSW": "South of South-West", "WSW": "West of South-West",
+//         "WNW": "West of North-West", "NNW": "North of North-West"
+//     };
+//     return directions[direction] ? directions[direction] : "INVALID Direction";
+// }
 let currentColorIndex = 0;
 function changeTheme() {
     var colors = ['blueviolet', 'bisque', 'cyan', 'salmon', 'gold', 'deepskyblue', 'chocolate'];
@@ -71,9 +71,10 @@ function scrollToBottom() {
     const mainElement = document.querySelector('.main');
     mainElement.scrollTop = mainElement.scrollHeight;
 }
-mapboxgl.accessToken = 'pk.eyJ1IjoidGFvdGhhbzEyMCIsImEiOiJjbHZnNzlpZm8wOWRnMmtwdTdham5nNnU2In0.WX6I4MjOIWjV9QCdu4m1Xw';
+mapboxgl.accessToken = 'w';
 var INITIAL_CENTER = [108.1500307, 16.0750179];
-var mapStyle = 'mapbox://styles/mapbox/outdoors-v12'
+//var mapStyle = 'mapbox://styles/mapbox/outdoors-v12'
+var mapStyle = 'mapbox://styles/taothao120/clw52cd4d02mv01qzgywp9fxj'
 const map = new mapboxgl.Map({
     container: 'map',
     style: mapStyle,
@@ -81,13 +82,7 @@ const map = new mapboxgl.Map({
     center: INITIAL_CENTER
 });
 const firebaseConfig = {
-    apiKey: "AIzaSyBnUEYApFonmRwA6us3YVOLiO7dZsOSMhA",
-    authDomain: "gpsdata-9819f.firebaseapp.com",
-    databaseURL: "https://gpsdata-9819f-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "gpsdata-9819f",
-    storageBucket: "gpsdata-9819f.appspot.com",
-    messagingSenderId: "563424617719",
-    appId: "1:563424617719:web:fc542b1b6db683c6521ff2"
+   // fire base api here
 };
 firebase.initializeApp(firebaseConfig);
 var ref = firebase.database().ref();
@@ -123,21 +118,21 @@ map.on('load', function () {
     var lastLatitude, lastLongitude;
     var lngLabel = document.getElementById('lng-label');
     var latLabel = document.getElementById('lat-label');
-    var addressLabel = document.getElementById('address-label');
+    //var addressLabel = document.getElementById('address-label');
     var distanceLabel = document.getElementById('distance-label');
-    var directionLabel = document.getElementById('direction-label');
-    var dateLabel = document.getElementById('date-label');
-    var timeLabel = document.getElementById('time-label');
+    //var directionLabel = document.getElementById('direction-label');
+    //var dateLabel = document.getElementById('date-label');
+    //var timeLabel = document.getElementById('time-label');
     ref.on("value", function (snapshot) {
         var data = snapshot.val()['GPS_Data'];
         var lat = data.Latitude;
         var lng = data.Longitude;
-        var date = data.Date;
-        var direction = data.Direction;
-        var time = data.UTC_Time;
-        directionLabel.innerText = direction === "" ? "Not Available" : `Moving towards ${getDirectionName(direction)}`;
-        dateLabel.innerText = date === "" ? "Not Available" : date;
-        timeLabel.innerText = time === "" ? "Not Available" : time;
+        //var date = data.Date;
+       // var direction = data.Direction;
+        //var time = data.UTC_Time;
+        //directionLabel.innerText = direction === "" ? "Not Available" : `Moving towards ${getDirectionName(direction)}`;
+        //dateLabel.innerText = date === "" ? "Not Available" : date;
+        //timeLabel.innerText = time === "" ? "Not Available" : time;
         lngLabel.innerText = lng === "" ? "Not Available" : lng;
         latLabel.innerText = lat === "" ? "Not Available" : lat;
         if (lineCoordinates.length > 0) {
